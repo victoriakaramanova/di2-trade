@@ -20,9 +20,9 @@
     }
 
     ul {
-        width: 94.8vw;
+        min-width: 55vw;
         padding: 0;
-        margin: -4em 2em;
+        margin: -4em 0;
         background: transparent;
         justify-content: flex-end;
         // width: 70%;
@@ -42,7 +42,6 @@
 
     a {
         display: flex;
-        // padding: 0.5em 1em;
         // background: #EEE;
         color: rgba(252, 252, 252, 1);
         text-decoration: none;
@@ -99,8 +98,10 @@
     float: right;
     padding: 0 2em 0 0;
     margin-top: -5em;
-    color: rgba(252, 252, 252, 1);
-    z-index: 500; opacity: 1;
+        i {
+        color: rgba(252, 252, 252, 1);
+        z-index: 10000; opacity: 1;
+    }
 }
 
 
