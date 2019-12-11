@@ -1,0 +1,96 @@
+html {
+    font: 14px/1.5 Roboto, Open-Sans, sans-serif;
+}
+
+body, form, input, textarea, option, select, button {
+    font: inherit;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+
+ul, ol {
+    padding-left: 2.5em;
+}
+
+blockquote,
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
+    font-weight: normal;
+}
+
+h1 { font-size: 2.6em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+blockquote {
+    padding: 0 2.5em;
+    border-left: 2px solid #000;
+    font-family: Georgia, serif;
+    margin-bottom: 1.5em;
+}
+
+blockquote p {
+    font-style: italic;
+    /* padding: 0; */
+}
+
+blockquote p:last-child {
+    padding-bottom: 0;
+}
+
+blockquote p.author {
+    text-align: right;
+}
+
+/* AR Box
+*/
+.ar-box {
+    display: block;
+    background-color: #333;
+    border-radius: 0.5em;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    position: relative;
+}
+
+.ar-box:after {
+    display: block;
+    content: '';
+    background: #F00;
+    padding-top: calc( (9 / 16) * 100 * 1%  );
+    position: relative;
+    z-index: 1;
+}
+
+.ar-box .inner {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #F0F;
+    z-index: 0;
+}
+
+.ar-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ar-box iframe {
+    display: block;
+    width: 100%;
+    height: 100%;    
+}

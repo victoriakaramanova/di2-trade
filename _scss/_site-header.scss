@@ -1,0 +1,104 @@
+.site-header {
+    // position: relative;
+    // z-index: 2000;
+
+    // .site-wrapper {
+    //     padding-top: 1rem;
+    //     padding-bottom: 1rem;
+
+    //     @include bp(desktop) {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-between;
+    //     }
+    // }
+    margin: 0;padding: 0;
+
+
+.site-media {
+    // background: url("{{ site.baseurl }}/images/header16x9.jpg");
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    position: relative;
+    display: inline-block;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // padding: 1em 10em;
+
+    .logo img {
+        background: white;
+        width: 5em;
+        height: 5em;
+        z-index: 1000;
+        display: block;
+        padding: 0.5em;
+        margin: 1em 0 0 1em;
+        border: 1px solid rgba(252, 252, 252, 1);
+        // float: left;
+    }
+
+    .logo img:before {
+        padding-top: calc((9/16)*100%);
+        // position: absolute;
+        // content: '';
+        // top: 0;right: 0;bottom: 0;left: 0;
+    }
+}
+
+.site-media:before {
+    display: block;
+    content: '';
+    background:rgba(70, 35, 122, 0.65); //rgba(19,41,48,.5);
+    position: absolute;
+    top: 0;right: 0;bottom: 0;left: 0;
+}
+
+// .site-media .site-wrapper { 
+//     width: 100%;
+//     color: rgba(252, 252, 252, 1);
+//     position: relative;
+//     // z-index: 10;
+//     font-size: 1.6em;
+//     padding-top: 2.5rem;
+//     padding-bottom: 2rem;
+
+//     @include bp(desktop) {
+//         text-align: left;
+//     }
+// }
+
+.site-media .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12em;
+}
+        
+    
+.site-media p,
+.site-media h1 {
+    text-align: center;
+    color: rgba(252, 252, 252, 1);
+    opacity: 1;
+    z-index: 200;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.site-media .site-wrapper h1 {
+    
+}
+
+.site-media .site-wrapper p {
+    font-size: 18px;
+}
+
+.site-media .site-wrapper .social {
+    padding-top: 2em;
+}
+}

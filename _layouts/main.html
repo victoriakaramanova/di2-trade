@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% if page.title != "Начало" %}
+        {{ page.title}} | {{ site.title }}
+        {% else %}
+        {{ site.title }}
+        {% endif %}
+    </title>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon/favicon-16x16.png" type="image/png">
+    <link href="{{ site.baseurl }}/css/site.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <script>
+        window.addEventListener("load", (event) => {
+            document.querySelector("body")
+                .classList.add("loaded")
+        });
+    </script>
+</head>
+
+<body class="page-{{ page.title | slugify}}">
+
+    <div class="site">
+
+        <header class="site-header">
+            <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
+            
+            <div class="site-media" style="background-image: url('{{ site.baseurl }}{{ page.featured_image }}');">
+                <a class="logo" href="#">
+                    <img src="{{ site.baseurl }}/images/logo.png" alt="logo">
+                </a>
+
+                {% include navigation.html location="header" %}
+
+                <div class="site-wrapper">
+                    {% if page.fancy_title %}
+                    <h1>{{ page.fancy_title }}</h2>
+                    {% endif %}
+                    {% if page.fancy_desc %}
+                        <p>{{ page.fancy_desc }}</p>
+                    {% endif %}
+                    {% if page.fancy_social == 1 %}
+                    <ul class="social">
+                        <li><a href="#">F</a></li>
+                        <li><a href="#">T</a></li>
+                        <li><a href="#">L</a></li>
+                        <li><a href="#">I</a></li>
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </header>
+
+        <main class="site-content">
+            <div class="site-wrapper">
+                {{ content }}
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-wrapper">
+
+                <div class="info">
+                    <p>{{ site.title }}</p>
+                    <p>A sleek, modern Jekyll theme for personal websites.</p>
+                    <p>&copy; 2019 Personal Jekyll Themes</p>
+                </div>
+                <ul class="social">
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">T</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">I</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

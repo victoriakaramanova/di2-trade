@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,500i,700,900&display=swap&subset=cyrillic');
+
+html {
+    font: 12px/1.5 "Roboto", "Open-Sans", sans-serif;
+    font-weight: 200;
+
+    @include bp(mobile) {
+        font-size: 14px;
+    }
+    
+    @include bp(phone) {
+        font-size: 12px;
+    }
+    
+    @include bp(desktop) {
+        font-size: 16px;
+    }
+}
+
+body, button, input, textarea, select, option {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(70,35,122,1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    // font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+    padding-bottom: 0.5em;
+}
+
+h1 {font-size: 2.6em; }
+h2 {font-size: 2.2em; }
+h3 {font-size: 1.8em; }
+h4 {font-size: 1.4em; }
+h5 {font-size: 1.2em; }
+h6 {font-size: 1em; }
