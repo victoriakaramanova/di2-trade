@@ -2,11 +2,37 @@
 layout: main
 title: Контакти
 permalink: /contacts/
+phone: 359898400235
+address: В. Търново ул. Тодор-Светослав 23
+email: di2-trade@gmail.com
+messenger: di2-trade
 order: 10
 ---
 
 <div class="contacts-container">
     <section class="map">
         <iframe src="{{ site.google-map }}" frameborder="0"></iframe>
+</section>
+<section class="contact-details">
+    <div class="list">
+        <ul class="social">
+            <li>
+                <i class="fas fa-phone fa-2x"></i>
+                <h6>{{ page.phone }}</h6>
+            </li>
+            <li>
+                <i class="fab fa-facebook-messenger fa-2x"></i>
+                <h6>{{ page.messenger }}</h6>
+            </li>
+            <li>
+                <i class="fas fa-envelope fa-2x"></i>
+                <h6>{{ page.email }}</h6>
+            </li>
+            <li>
+                <i class="fas fa-map-marker fa-2x"></i>
+                <h6>{{ page.address }}</h6>
+            </li>
+        </ul>
+    </div>
 </section>
 </div>
