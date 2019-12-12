@@ -33,26 +33,38 @@
         .list {
             display: flex;
             margin: 0 auto;
-
+            width: 80vw;
             ul {
                 display: flex;
-                justify-content: center;
                 flex-wrap: nowrap;
-                align-items: center;
-                padding-bottom: 3em;
+                justify-content: space-between;
+                align-items: stretch;
+                padding-bottom: 2em;
                 margin: 0 auto;
                 li {
                     display: flex;
                     align-items: center;
-                    i, h6 {
-                        color: rgba(70, 35, 122, 0.65);
-                        margin-left: 1em;
-                    }
-                    h6 {
-                        width: 10em;
+                    width: calc(25% - 3em);
+                    p {
+                       max-width: 7em; 
+                       &, i {
+                           color: rgba(70, 35, 122, 0.65);
+                           margin-left: 0.5em;
+                       }
                     }
                 }
                 
+            }
+        }
+    }
+
+    .entry-content {
+        background-color: rgba(252, 252, 252, 1);
+        .sub {
+            display: flex;
+            justify-content: space-between;
+            input[type="email"] {
+                // margin-left: 5em;
             }
         }
     }

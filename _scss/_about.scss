@@ -1,0 +1,54 @@
+$width-brand: 250px;	
+$height-brand: 100px;	
+$brand-count: 14;	
+$animationSpeed: 40s;	
+		
+// Animation		
+@keyframes scroll {	
+	0% {
+        transform: translateX(0);
+    }
+	100% {
+		transform: translateX(-$width-brand * $brand-count / 2);
+    }
+}
+// Styling		
+.slider-brand {
+	position: relative;
+	margin: 30px auto;
+	max-width: 720px; // Any. Content width	
+	width: 100%;
+	height: $height-brand;
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);	
+	overflow: hidden;
+
+	.slide-track {
+		display: flex;
+		width: $width-brand * $brand-count;
+		animation: scroll $animationSpeed linear infinite;
+    }	
+	img	{
+		width: $width-brand;
+		height: $height-brand;
+    }
+	// gradients around the edges	
+	&:before,	
+	&:after	{
+		content: '';
+		position: absolute;
+		width: $height-brand;
+		height: $height-brand;
+		background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		z-index: 2;
+    }
+	&:after	{
+		top: 0;
+		right: 0;
+		transform: rotateZ(180deg);
+    }
+	&:before {
+		top: 0;
+        left: 0;
+    }
+}

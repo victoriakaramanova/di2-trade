@@ -6,58 +6,79 @@ form {
     input[type="text"],
     input[type="tel"],
     input[type="email"],
-    input[type="password"] {
-        display: block;
-        border: 1px solid #ccc;
+    input[type="password"],
+    textarea {
+        display: inline-block;
+        border: 1px solid rgba(70, 35, 122, 1);
         padding: 0.5em 0.8em;
-        border-radius: 0.3em;
+        color: rgba(70, 35, 122, 1);
         outline: none;
 
         &:focus {
-            border-color: #090;
+            border-color: rgba(61, 220, 151, 1);
 
             & + label {
-                color: #090;
+                color: rgba(61, 220, 151, 1);
             }
         }
+        // input[type="text"],
+        // input[type="email"] {
+        //     width: 5vw;
+        // }
     }
 
     fieldset {
         display: block;
-        width: 100%;
-        border: 1px solid #ccc;
+        width: 60%;
+        border: 1px solid  rgba(70, 35, 122, 0.65);
+        margin: 0 auto;
         padding: 1rem;
+        box-shadow: none;
 
         legend {
             padding: 0 1em;
-            font-weight: bold;
-            font-size: 1.4em;
+            font-weight: 300;
+            font-size: 1.3em;
+            color: rgba(70, 35, 122, 0.65);
         }
     }
 
     .field {
         display: flex;
         flex-direction: column;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
 
         label {
             order: 1;
             display: block;
             padding-bottom: 0.2em;
+            color: rgba(70, 35, 122, 0.85);
+            font-size: 0.9em;
+
         }
-        input {
+        input, textarea {
             order: 2;
         }
 
         &.submit {
             input {
                 display: block;
-                border: 1px solid #ccc;
-                background: #fff;
-                color: black;
-                padding: 1em 0;
+                border: 1px solid rgba(70, 35, 122, 0.65);
+                background: rgba(70, 35, 122, 0.65);
+                font-weight: 400;
+                color: rgba(252, 252, 252, 1);
+                padding: 0.6em 0;
+                letter-spacing: 0.1em;
                 text-align: center;
-                border-radius: 0.3em;
+                text-transform: uppercase;
+                outline: none;
+                width: 7em;
+
+                &:hover {
+                    background: rgba(252, 252, 252, 1);
+                    color: rgba(70, 35, 122, 0.65);
+                    font-weight: bolder;
+                }
             }
         }
     }
