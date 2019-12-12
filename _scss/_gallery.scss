@@ -43,6 +43,14 @@
                 padding-top: 50%;
             }
         }
+
+        &.small-square {
+            grid-row: span 1;
+
+            &:before {
+                padding-top: 50%;
+            }
+        }
     }
 
     a {
