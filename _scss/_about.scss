@@ -18,7 +18,7 @@ $animationSpeed: 40s;
 	margin: 30px auto;
 	max-width: 720px; // Any. Content width	
 	width: 100%;
-	height: $height-brand;
+	height: auto; //$height-brand;
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);	
 	overflow: hidden;
@@ -26,11 +26,13 @@ $animationSpeed: 40s;
 	.slide-track {
 		display: flex;
 		width: $width-brand * $brand-count;
+		justify-content: space-between;
 		animation: scroll $animationSpeed linear infinite;
     }	
 	img	{
 		width: $width-brand;
-		height: $height-brand;
+		height: auto; //$height-brand;
+		margin-right: 2em;
     }
 	// gradients around the edges	
 	&:before,	
@@ -38,7 +40,7 @@ $animationSpeed: 40s;
 		content: '';
 		position: absolute;
 		width: $height-brand;
-		height: $height-brand;
+		height: auto; //$height-brand;
 		background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 		z-index: 2;
     }

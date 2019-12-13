@@ -1,10 +1,5 @@
 .site-nav {
-    // display: flex;
-    // position: absolute;
-    // flex-direction: row;
-    // margin-left: 30vw;
-    // width: 100%;
-    text-align: right;
+    float: right;
     text-transform: uppercase;
     padding-top: 0.5em;
 
@@ -12,23 +7,14 @@
         display: none;
     }
 
-    & > ul {
-        @include bp(desktop) {
-            display: flex;
-            // justify-content: right;
-        }
-    }
-
+    
     ul {
-        width: 100vw;
+        // width: 100vw;
         padding: 0;
-        margin: -4em 0;
+        margin: 0;
         background: transparent;
-        justify-content: flex-end;
-        // width: 70%;
         overflow: hidden;
-        // justify-content: flex-end;
-
+        
         li {
             display: block;
             margin: 0 0.7em;
@@ -37,7 +23,12 @@
                 display: block;
             }
         }
-   
+    }
+
+    & > ul {
+        @include bp(desktop) {
+            display: flex;
+        }
     }
 
     a {
@@ -73,6 +64,10 @@
     // }
 }
 
+.site-nav-toggle-label {
+    float: right;
+    color: rgba(252, 252, 252, 1);
+}
 
 .site-nav-toggle {
     position: absolute;
@@ -82,8 +77,6 @@
     &:checked + .site .site-header .site-media .site-nav { //.site-nav .site-branding
         @include bp(mobile) {
             display: block;
-            // margin-left: auto !important;
-            // text-align: right;
         }
     }
 
@@ -95,9 +88,9 @@
 }
 
 .site-nav-toggle-label {
-    float: right;
-    padding: 0 2em 0 0;
-    margin-top: -5em;
+    // float: right;
+    // padding: 0 2em 0 0;
+    // margin-top: -5em;
         i {
         color: rgba(252, 252, 252, 1);
         z-index: 10000; opacity: 1;

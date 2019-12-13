@@ -1,7 +1,6 @@
-<label for="site-nav-toggle" class="site-nav-toggle-label"><i class="fas fa-bars fa-3x"></i></label>
+<label for="site-nav-toggle" class="site-nav-toggle-label"><i class="fas fa-bars fa-2x"></i></label>
 <nav class="site-nav location={{ include.location }}">
     <ul>
-        <!-- <li><a class="logo" href="{{ site.baseurl }}/images/logo.jpg"></a></li> -->
         {% assign navigation_pages = site.pages | sort:"order" %}
 
         {% for current_page in navigation_pages %}

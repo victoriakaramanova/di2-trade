@@ -25,57 +25,60 @@
 
 <body class="page-{{ page.title | slugify}}">
 
+    <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
+    
     <div class="site">
-
         <header class="site-header">
-            <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
-            
             <div class="site-media" style="background-image: url('{{ site.baseurl }}{{ page.featured_image }}');">
-                <a class="logo" href="#">
-                    <img src="{{ site.baseurl }}/images/logo.png" alt="logo">
-                </a>
-
-                {% include navigation.html location="header" %}
-
                 <div class="site-wrapper">
+                    <div class="horizontal">
+                    <a href="{{ site.baseurl }}#">
+                        <img src="{{ site.baseurl }}/images/logos/logo.png" alt="logo" width="75">
+                    </a>
+
+                    {% include navigation.html location="header" %}
+                </div>
+
+                <div class="site-message">
                     {% if page.fancy_title %}
-                    <h1>{{ page.fancy_title }}</h2>
+                    <h1>{{ page.fancy_title }}</h1>
                     {% endif %}
                     {% if page.fancy_desc %}
-                        <p>{{ page.fancy_desc }}</p>
+                    <p>{{ page.fancy_desc }}</p>
                     {% endif %}
-                    {% if page.fancy_social == 1 %}
+                    <!-- {% if page.fancy_social == 1 %}
                     <ul class="social">
                         <li><a href="#">F</a></li>
                         <li><a href="#">T</a></li>
                         <li><a href="#">L</a></li>
                         <li><a href="#">I</a></li>
                     </ul>
-                    {% endif %}
+                    {% endif %} -->
+                </div>
                 </div>
             </div>
         </header>
 
-        <main class="site-content">
-            <div class="site-wrapper">
-                {{ content }}
-            </div>
-        </main>
+    <main class="site-content">
+        <div class="site-wrapper">
+            {{ content }}
+        </div>
+    </main>
 
-        <footer class="site-footer">
-            <div class="site-wrapper">
+    <footer class="site-footer">
+        <div class="site-wrapper">
 
-                <div class="info">
-                    <p>{{ site.title }} &copy; 2019</p>
-                </div>
-                <ul class="social">
-                    <li><a href="#">F</a></li>
-                    <li><a href="#">T</a></li>
-                    <li><a href="#">L</a></li>
-                    <li><a href="#">I</a></li>
-                </ul>
+            <div class="info">
+                <p>{{ site.title }} &copy; 2019</p>
             </div>
-        </footer>
+            <ul class="social">
+                <li><a href="#">F</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">I</a></li>
+            </ul>
+        </div>
+    </footer>
     </div>
 
 </body>
