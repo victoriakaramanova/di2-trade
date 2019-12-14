@@ -4,9 +4,10 @@
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: rgba(70, 35, 122, 1)
+    // align-items: center;
+    color: rgba(70, 35, 122, 1);
     // font-size: 1.2em;
+    background: rgba(252, 252, 252, 1);
 }
 
 .site-footer .social i {
@@ -28,4 +29,10 @@
 
 .site-footer .site-wrapper p:first-child {
     margin: 1em;
+}
+
+.site-footer .site-wrapper .info {
+    margin: 0;padding: 0;
+    text-align: left;
+    
 }

@@ -3,15 +3,22 @@ $height-brand: 100px;
 $brand-count: 16;	
 $animationSpeed: 40s;	
 		
-h3 {
-	text-align: center;
-	padding-top: 1em;
-}
 
-.info p {
-	// margin: 2em calc( (100em - --layout-width)/2 );
-	width: --layout-width;
-	margin: 1em 15em;
+.infor {
+	margin: 0 auto;
+	// width: 66em;
+	// padding: 0 2em;
+	// margin: calc( (100em - 66em)/2 );
+	h3 {
+		text-align: center;
+		padding: 2em 0 1em;
+		}
+	p {
+		padding: 1em 10em;
+	}
+	&:last-child {
+		margin-bottom: 3em;
+	}
 }
 
 .underline {
@@ -19,6 +26,7 @@ h3 {
 	width: 3em;
 	margin: 0 auto;
 background-color: rgba(70, 35, 122, 0.75);
+    margin-bottom: 2em;
 }
 
 // Animation		
@@ -34,7 +42,7 @@ background-color: rgba(70, 35, 122, 0.75);
 .slider-brand {
 	position: relative;
 	margin: 30px auto;
-	max-width: 720px; // Any. Content width	
+	max-width: 70em; //720px; Any. Content width	
 	width: 100%;
 	height: auto; //$height-brand;
 	background: white;
