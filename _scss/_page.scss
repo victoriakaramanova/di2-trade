@@ -24,7 +24,9 @@
     .site-nav ul li a,
     .site-nav-toggle-label i {
         color: rgba(70, 35, 122, 0.65);
-
+              &:hover {
+                  border: 1px solid rgba(70, 35, 122, 0.65);
+              }
         }
     }
 

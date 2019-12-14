@@ -1,16 +1,19 @@
 .site-header {
     position: relative;
     z-index: 2000;
+    background-color: rgba(252, 252, 252, 1);
+
     .site-wrapper {
         width: 100%;
-        
-        margin: 1em;
+        // margin: 1em;
         // padding: 2rem;
         // padding-bottom: 1rem;
 
         @include bp(desktop) {
             display: flex;
             flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
         }
     }
 }
@@ -42,14 +45,7 @@
         }
 }
 
-    // .logo img:before {
-    //     padding-top: calc((9/16)*100%);
-    //     // position: absolute;
-    //     // content: '';
-    //     // top: 0;right: 0;bottom: 0;left: 0;
-    // }
-
-
+   
 .site-media:before {
     display: block;
     content: '';
@@ -81,6 +77,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    // height: 100%;
+    // width: 100%;
+    // position: absolute;
+    // top: 0;
+    // z-index: 1;
+    //     h1, p {
+    //         margin: 0 auto;
+    //         height: inherit;
+    //         width: 66em;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         flex-direction: column;
+        
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
 }
         
     
@@ -88,9 +102,9 @@
 .site-media .site-message h1 {
     // min-width: 70vw;
     text-align: center;
-    color: rgba(252, 252, 252, 1);
-    opacity: 1;
-    z-index: 200;
+    // color: rgba(252, 252, 252, 1);
+    // opacity: 1;
+    // z-index: 200;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.1em;

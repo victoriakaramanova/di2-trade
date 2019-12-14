@@ -18,13 +18,13 @@ html {
     // padding-top: 2em;
 }
 
-.social li {
+.contact-details .social li {
     display: block;
     list-style: none outside;
     margin-right: 1em;
 }
 
-.social i {
+.contact-details .social i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +32,8 @@ html {
     border-radius: 50%;
     background: rgba(252, 252, 252, 1);
     border: 1px solid rgba(70, 35, 122, 0.65);
-    width: 2.8em;
-    height: 2.8em;
+    width: 2.5em;
+    height: 2.5em;
     line-height: 1;
     transition: background 0.2s ease-in;
 }
