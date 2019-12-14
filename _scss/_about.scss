@@ -1,8 +1,26 @@
-$width-brand: 250px;	
+$width-brand: 150px;	
 $height-brand: 100px;	
-$brand-count: 14;	
+$brand-count: 16;	
 $animationSpeed: 40s;	
 		
+h3 {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.info p {
+	// margin: 2em calc( (100em - --layout-width)/2 );
+	width: --layout-width;
+	margin: 1em 15em;
+}
+
+.underline {
+	height: 2px;
+	width: 3em;
+	margin: 0 auto;
+background-color: rgba(70, 35, 122, 0.75);
+}
+
 // Animation		
 @keyframes scroll {	
 	0% {
@@ -31,7 +49,7 @@ $animationSpeed: 40s;
     }	
 	img	{
 		width: $width-brand;
-		height: auto; //$height-brand;
+		height: $height-brand;
 		margin-right: 2em;
     }
 	// gradients around the edges	
@@ -39,8 +57,8 @@ $animationSpeed: 40s;
 	&:after	{
 		content: '';
 		position: absolute;
-		width: $height-brand;
-		height: auto; //$height-brand;
+		width: $width-brand;
+		height: $height-brand;
 		background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 		z-index: 2;
     }

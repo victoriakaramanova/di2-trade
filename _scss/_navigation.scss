@@ -1,7 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
 .site-nav {
     float: right;
     text-transform: uppercase;
-    padding-top: 0.5em;
+    // padding-top: 0.5em;
 
     @include bp(mobile) {
         display: none;
@@ -11,14 +26,13 @@
     ul {
         // width: 100vw;
         padding: 0;
-        margin: 0;
+        margin-right: 1em;
         background: transparent;
         overflow: hidden;
         
         li {
             display: block;
-            margin: 0 0.7em;
-            position: relative;
+            margin: 0.2em 0.7em;
             &:hover > ul {
                 display: block;
             }
@@ -36,9 +50,8 @@
         // background: #EEE;
         color: rgba(252, 252, 252, 1);
         text-decoration: none;
-        padding: 0.3em 0.5em;
+        // padding: 0.5em;
         letter-spacing: 2px;
-        
         // border-radius: 0.3em;
         // outline: none;
 
@@ -51,8 +64,8 @@
         // background: rgba(70, 35, 122, 1);
         // color: #FFF;
         border: 1px solid rgba(252, 252, 252, 1);
-        // padding: 0.3em 0.5em;
-        // letter-spacing: 2px;
+        // padding: 0.5em;
+        letter-spacing: 2px;
     }
 
     // li.page-title-about a:before {
@@ -90,10 +103,10 @@
 .site-nav-toggle-label {
     // float: right;
     // padding: 0 2em 0 0;
-    // margin-top: -5em;
-        i {
+    i {
         color: rgba(252, 252, 252, 1);
         z-index: 10000; opacity: 1;
+        margin-right: 1em;
     }
 }
 

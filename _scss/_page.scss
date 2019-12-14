@@ -12,9 +12,30 @@
     }
 }
 
-.page-контакти, .page-услуги {
+.page-контакти, .page-услуги, .page-за-нас {
     .site-media {
-        height: 7em;
+        height: 8em;
         background-attachment: scroll;
+        &:before {
+            background-color: rgba(252, 252, 252, 1);
+        }
+        color: rgba(70, 35, 122, 0.65);
     }
+    .site-nav ul li a,
+    .site-nav-toggle-label i {
+        color: rgba(70, 35, 122, 0.65);
+
+        }
+    }
+
+    .page-за-нас {
+        .top-image {
+            height: 20em;
+        }
+    
+    }
+
+.site-content .site-wrapper {
+    color: rgba(70, 35, 122, 0.75);
+    background-color: rgba(252, 252, 252, 1);
 }

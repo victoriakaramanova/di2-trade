@@ -53,11 +53,11 @@
     position: relative;
     z-index: 20;
     box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.07);
-    padding: 2em;
+    // padding: 2em;
 
      @include bp(desktop) {
          flex-grow: 1;
-       margin: 2em 2em 2em -2em;
+    //    margin: 2em 2em 2em 2em;
     }
 }
 
@@ -81,7 +81,7 @@
 
 .entry:nth-child(even) .entry-content {
     @include bp(desktop) {
-        margin: 2em -2em 2em 2em;
+        margin: 2em 2em 2em 2em;
     }
 }
 
@@ -89,7 +89,7 @@
 .entry:nth-child(even) .entry-content {
     
     @include bp(mobile) {
-        margin: -2em 2em 2em 2em;
+        margin: 2em 2em 2em 2em;
     }
    
 }

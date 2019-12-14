@@ -1,5 +1,7 @@
 .site-footer .site-wrapper {
-    padding: 2em;
+    // padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,20 +9,23 @@
     // font-size: 1.2em;
 }
 
-.site-footer .social a {
+.site-footer .social i {
     background: rgba(252, 252, 252, 1);
     color: rgba(70, 35, 122, 1);
+    width: 2em;
+    height: 2em;
 }
 
 .site-footer .site-wrapper p {
-    opacity: 0.4;
+    opacity: 0.8;
     transition: opacity 0.3s ease-in;
+    font-weight: 400;
 }
 
 .site-footer:hover .site-wrapper p {
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .site-footer .site-wrapper p:first-child {
-    // font-size: 1.2em;
+    margin: 1em;
 }
