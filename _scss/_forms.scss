@@ -32,7 +32,7 @@ form {
         width: 60%;
         border: 1px solid  rgba(70, 35, 122, 0.65);
         margin: 0 auto;
-        padding: 1rem;
+        // padding: 1rem;
         box-shadow: none;
 
         legend {
@@ -46,7 +46,7 @@ form {
     .field {
         display: flex;
         flex-direction: column;
-        padding-bottom: 1em;
+        // padding-bottom: 1em;
 
         label {
             order: 1;
