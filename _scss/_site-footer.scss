@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     // align-items: center;
-    color: rgba(70, 35, 122, 1);
+    color: var(--lilac-font);
     // font-size: 1.2em;
     background: rgba(252, 252, 252, 1);
 }
@@ -21,7 +21,7 @@
                 p {
                    max-width: 5em; 
                    &, i {
-                       color: rgba(70, 35, 122, 0.65);
+                       color: var(--lilac-font);
                        margin-left: 0.5em;
                    }
                 }
@@ -30,8 +30,8 @@
 }
 
 .site-footer .social i {
-    background: rgba(252, 252, 252, 1);
-    color: rgba(70, 35, 122, 1);
+    background: var(--baby-font);
+    color: var(--lilac-font);
     width: 2em;
     height: 2em;
 }

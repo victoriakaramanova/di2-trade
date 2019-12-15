@@ -20,15 +20,15 @@
         height: 8em;
         background-attachment: scroll;
         &:before {
-            background-color: rgba(252, 252, 252, 1);
+            background-color: var(--baby-font);
         }
-        color: rgba(70, 35, 122, 0.65);
+        color: var(--lilac-font);
     }
     .site-nav ul li a,
     .site-nav-toggle-label i {
-        color: rgba(70, 35, 122, 0.65);
+        color: var(--lilac-font);
               &:hover {
-                  border: 1px solid rgba(70, 35, 122, 0.65);
+                  border: 1px solid var(--lilac-font);
               }
         }
     }
@@ -41,6 +41,6 @@
     }
 
 .site-content .site-wrapper {
-    color: rgba(70, 35, 122, 0.75);
-    background-color: rgba(252, 252, 252, 1);
+    color: var(--lilac-font);
+    background-color: var(--baby-font);
 }
