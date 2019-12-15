@@ -17,9 +17,33 @@
 }
 
 .site-content .site-wrapper {
-    
+    // height: 90vh;
 }
 
 .site-footer {
-
+// margin: 0 1em 1em;
 }
+
+.service-types {
+    display: flex;
+    
+    
+    ul {
+        display: flex; 
+        // flex-wrap: nowrap;
+        max-width: 40vw;
+        margin: 0 auto;
+        
+        li {
+            // display: flex; 
+            // flex-wrap: wrap;
+            // flex-grow: 1;
+            display: block;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+    }
+}
+
