@@ -34,15 +34,17 @@
         justify-content: space-between;
         align-items: center;
         align-content: center;
+        
             img {
                 background: transparent;
                 width: 2em;
                 height: 2em;
                 z-index: 1000;
                 display: block;
-                border: 1px solid rgba(252, 252, 252, 1);
+                // border: 1px solid rgba(252, 252, 252, 1);
                 }
-        }
+            }
+        
 }
 
    

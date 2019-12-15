@@ -14,7 +14,9 @@ html {
 .site-nav {
     float: right;
     text-transform: uppercase;
-    // padding-top: 0.5em;
+    
+    // REMOVE IF SPOILING!!!!!!!
+    padding-top: 1em;
 
     @include bp(mobile) {
         display: none;

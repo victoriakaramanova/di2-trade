@@ -9,7 +9,7 @@ $animationSpeed: 40s;
 	// width: 66em;
 	// padding: 0 2em;
 	// margin: calc( (100em - 66em)/2 );
-	h3 {
+	>h3 {
 		text-align: center;
 		padding: 2em 0 1em;
 		}
@@ -46,7 +46,7 @@ background-color: rgba(70, 35, 122, 0.75);
 	width: 100%;
 	height: auto; //$height-brand;
 	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);	
+	box-shadow: 0 10px 45px -5px rgba(0, 0, 0, .125);	
 	overflow: hidden;
 
 	.slide-track {
